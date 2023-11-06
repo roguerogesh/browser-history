@@ -95,7 +95,7 @@ class App extends Component {
   render() {
     const {searchInput, historyList} = this.state
     const searchResult = historyList.filter(eachItem =>
-      eachItem.name.toLowerCase().includes(searchInput.toLowerCase()),
+      eachItem.title.toLowerCase().includes(searchInput.toLowerCase()),
     )
 
     return (
@@ -110,13 +110,13 @@ class App extends Component {
               src="https://assets.ccbp.in/frontend/react-js/search-img.png"
               alt="search"
               className="search-icon"
-              onChange={this.onChangeSearchInput}
-              value={searchInput}
             />
             <input
               type="search"
               placeholder="Search History"
               className="search-bar"
+              value={searchInput}
+              onChange={this.onChangeSearchInput}
             />
           </div>
         </div>
