@@ -6,9 +6,7 @@ const HistoryItem = props => {
   const onDeleteItem = () => {
     deleteItem(id)
   }
-  if (eachList.length === 0) {
-    return <p>There is no history to show</p>
-  }
+
   return (
     <li className="list-item">
       <p className="time">{timeAccessed}</p>

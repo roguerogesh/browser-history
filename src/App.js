@@ -121,15 +121,19 @@ class App extends Component {
           </div>
         </div>
         <div className="history-container">
-          <ul className="list-container">
-            {searchResult.map(eachList => (
-              <HistoryItem
-                eachList={eachList}
-                key={eachList.id}
-                deleteItem={this.deleteHistory}
-              />
-            ))}
-          </ul>
+          {searchResult.length === 0 ? (
+            <p>There is no history to show</p>
+          ) : (
+            <ul className="list-container">
+              {searchResult.map(eachList => (
+                <HistoryItem
+                  eachList={eachList}
+                  key={eachList.id}
+                  deleteItem={this.deleteHistory}
+                />
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     )
