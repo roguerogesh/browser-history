@@ -1,0 +1,31 @@
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 10px;
+}
+
+.domain-logo {
+  width: 30px;
+}
+
+.title {
+  color: black;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.domain-url {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+.delete-logo {
+  width: 30px;
+}
